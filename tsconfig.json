@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@commands/*": ["source/commands/*"],
+      "@database/*": ["source/database/*"],
+      "@modules/*": ["source/modules/*"],
+      "@scripts/*": ["source/scripts/*"],
+
+      "@src/*": ["source/*"],
+
+      "@config/*": ["config/*"]
+    }
+  }
+}

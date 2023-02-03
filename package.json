@@ -1,0 +1,34 @@
+{
+  "name": "kimiora-project",
+  "version": "0.1-beta",
+  "description": "",
+  "main": "index.ts",
+  "branch": "main",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node -r tsconfig-paths/register index.ts",
+    "build": "pnpm i && ts-node -r tsconfig-paths/register index.ts"
+  },
+  "keywords": [],
+  "author": "Auth < contact.me.auth@gmail.com > , clod44 < .T#8376 >",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^1.3.0",
+    "@discordjs/rest": "^1.3.0",
+    "@discordjs/voice": "^0.11.0",
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "*",
+    "discord-api-types": "^0.37.18",
+    "discord.js": "^14.6.0",
+    "js-yaml": "^4.1.0",
+    "mongodb": "^4.12.0",
+    "ts-yaml": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "pnpm": "^7.16.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.1",
+    "typescript": "^4.9.3"
+  }
+}
