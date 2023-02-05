@@ -38,15 +38,14 @@ export default async function Main() {
     _func[index](i);
   })
 
-  // Connecting to Discord
-  await client.login(Token)
-    .then(() => logsucess('Discord')).catch(err => logerr(err))
+  try {
+    await client.login(Token);
+    await DatabaseClient.Connect()
+    await rest.put(Routes.applicationGuildCommands(Identificators.client, Identificators.guild), { body: _data })
 
-  // Connecting to the database
-  await DatabaseClient.connect()
-    .then(() => logsucess('MongoDB')).catch(err => logerr(err))
-
-  // Registering slash commands to the bot
-  await rest.put(Routes.applicationGuildCommands(Identificators.client, Identificators.guild), { body: _data })
-    .finally(() => console.log('[Kimiora] :: Refreshed (/)'));
+    console.log("[Kimiora] :: Successfully connected to all services.")
+  } catch (e) {
+    logerr(e);
+  } 
+  
 };
