@@ -32,20 +32,24 @@ try {
 
 export default async function Main() {
   // Running the commands
-  client.on('interactionCreate', (i) => {
+  client.on("interactionCreate", (i) => {
     if (!i.isChatInputCommand()) return;
     const index = _name.indexOf(i.commandName);
     _func[index](i);
-  })
+  });
 
   try {
+    await DatabaseClient.Connect();
     await client.login(Token);
-    await DatabaseClient.Connect()
-    await rest.put(Routes.applicationGuildCommands(Identificators.client, Identificators.guild), { body: _data })
+    await rest.put(
+      Routes.applicationGuildCommands(
+        Identificators.client,
+        Identificators.guild),
+      { body: _data }
+    );
 
-    console.log("[Kimiora] :: Successfully connected to all services.")
+    console.log("[Kimiora] :: Successfully connected to all services.");
   } catch (e) {
     logerr(e);
-  } 
-  
-};
+  }
+}
