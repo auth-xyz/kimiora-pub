@@ -4,8 +4,9 @@ Kimiora is a fully functional and feature-packed Discord Bot that is designed to
 
 `Requirements:`
 
--`(node.js >=18)[https://nodejs.org/en/]`
--`(pnpm)[https://pnpm.io/]`
+-[typescript](https://www.typescriptlang.org/download)
+-[node.js](https://nodejs.org/en/)
+-[pnpm](https://pnpm.io/)
 
 `Installation:`
 - Clone the repository
@@ -15,7 +16,7 @@ git clone https://github.com/auth-xyz/kimiora-pub.git
 
 ```
     
-Install the dependencies
+- Install the dependencies
 
 ```bash
 
@@ -39,12 +40,14 @@ Set up a configuration file at ./config/config.json with the following informati
 
 After that, you can initialize the bot by running:
     
-```
+```bash
+
 pnpm install
+
 ```
 
 #### Contributing
 We welcome contributions to Kimiora. Whether you're a seasoned developer or just starting out, there are many ways to get involved and help improve the project. If you have any suggestions or find any bugs, please open an issue. For larger contributions, please create a pull request.
 
-### License
+#### License
 Kimiora-pub is open source software licensed under the MIT License.
