@@ -4,9 +4,9 @@ Kimiora is a fully functional and feature-packed Discord Bot that is designed to
 
 `Requirements:`
 
--[typescript](https://www.typescriptlang.org/download)
--[node.js](https://nodejs.org/en/)
--[pnpm](https://pnpm.io/)
+- [typescript](https://www.typescriptlang.org/download)
+- [node.js](https://nodejs.org/en/)
+- [pnpm](https://pnpm.io/)
 
 `Installation:`
 - Clone the repository
