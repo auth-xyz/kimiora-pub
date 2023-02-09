@@ -1,6 +1,6 @@
 # Kimiora
 
-### Kimiora is a fully functional and feature-packed Discord Bot that is designed to enhance the experience of your Discord server. Written in TypeScript using Discord.js, Kimiora is highly configurable and can be easily customized to fit your needs.
+Kimiora is a fully functional and feature-packed Discord Bot that is designed to enhance the experience of your Discord server. Written in TypeScript using Discord.js, Kimiora is highly configurable and can be easily customized to fit your needs.
 
 `Requirements:` 
 
@@ -8,7 +8,7 @@
     > pnpm
 
 `Installation:`
-
+``
     Clone the repository
 
     ```bash
