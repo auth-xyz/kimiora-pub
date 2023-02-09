@@ -10,20 +10,38 @@
 `Installation:`
 
     Clone the repository
-    ```shell
+
+    ```bash
     git clone https://github.com/auth-xyz/kimiora-pub.git
     ```
+    
     Install the dependencies
+    
+    ```bash
     pnpm install
-    Set up a configuration file at ./config/config.json with the following information:
-    {
-    "token": "YOUR_DISCORD_BOT_TOKEN"
-    }
-    Start the bot
-    pnpm start
+    ```
 
-Contributing
+    Set up a configuration file at ./config/config.json with the following information:
+    ```json
+
+    {
+        "Token": "YOUR_DISCORD_BOT_TOKEN",
+        "Identificators": {
+            "guild": "the id of the guild you're using",
+            "client": "your discord bot id"
+        }
+    }
+    
+    ```
+
+    After that, you can initialize the bot by running:
+    
+    ```
+    pnpm install
+    ```
+
+#### Contributing
 We welcome contributions to Kimiora. Whether you're a seasoned developer or just starting out, there are many ways to get involved and help improve the project. If you have any suggestions or find any bugs, please open an issue. For larger contributions, please create a pull request.
 
-License
-Kimiora is open source software licensed under the MIT License.
+### License
+Kimiora-pub is open source software licensed under the MIT License.
